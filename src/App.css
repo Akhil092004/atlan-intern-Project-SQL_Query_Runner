@@ -1,117 +1,147 @@
+/* Define theme variables */
+:root {
+  --bg-color: #f4f4f4;
+  --panel-bg: #e2e8f0;
+  --panel-bg-alt: #f3f4f6;
+  --text-color: #000;
+  --border-color: #ddd;
+  --table-header-bg: #f4f4f4;
+  --table-row-bg: #f9f9f9;
+  --table-hover-bg: #f1f1f1;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #121212;
+  --panel-bg: #1e1e1e;
+  --panel-bg-alt: #252525;
+  --text-color: #f5f5f5;
+  --border-color: #444;
+  --table-header-bg: #2a2a2a;
+  --table-row-bg: #1e1e1e;
+  --table-hover-bg: #333;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Main App Container */
 .app-container {
   display: flex;
   height: 100vh;
   gap: 10px;
   padding: 20px;
-  background-color: #f4f4f4;
-  margin-top: 85px ;
-  
-  
+  margin-top: 85px;
+  background-color: var(--bg-color);
 }
 
+/* Left Panel */
 .left-panel {
   display: flex;
   height: 90vh;
   flex-direction: column;
   width: 40%;
   gap: 10px;
-  width: 40%;
-  background-color: #e2e8f0; /* Tailwind gray-200 */
+  background-color: var(--panel-bg);
   padding: 1rem;
+  border-radius: 8px;
 }
 
-.right-panel{
+/* Right Panel */
+.right-panel {
   width: 60%;
-  overflow: auto; /* Enables both X & Y scrolling */
-  background-color: #f3f4f6; /* Tailwind gray-100 */
+  overflow: auto;
+  background-color: var(--panel-bg-alt);
   padding: 1rem;
-
+  border-radius: 8px;
 }
+
+/* Query Selector */
+.query-selector {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--panel-bg);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.query-selector:hover {
+  background-color: var(--table-hover-bg);
+}
+
+/* Result Section */
 .result-section {
   flex-grow: 1;
-  background-color: #fff;
+  background-color: var(--panel-bg-alt);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.mantine-Select-root {
-  margin-bottom: 10px;
-}
-
-.mantine-Table-root {
-  background-color: white;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.mantine-Button-root {
-  margin-top: 10px;
-}
-
-.query-selector{
-  cursor:"pointer";
-  padding:"10px";
-  border:"1px solid black";
-  border-radius:"5px";
-}
-
-.query-selector:hover{
-  background-color: #f4f4f4;
-}
-
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
   font-family: Arial, sans-serif;
+  background-color: var(--panel-bg);
+  color: var(--text-color);
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: var(--table-header-bg);
   font-weight: bold;
   text-transform: capitalize;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: var(--table-row-bg);
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: var(--table-hover-bg);
   transition: background-color 0.3s ease-in-out;
 }
 
-td {
-  white-space: nowrap;
+.dark-Text{
+  background-color: var(--panel-bg);
+  color: var(--text-color);
 }
 
-
+/* Container Styles */
 .container {
   display: flex;
   height: 100vh;
 }
 
+/* Left Pane */
 .left-pane {
   width: 40%;
-  background-color: #e2e8f0; /* Tailwind gray-200 */
+  background-color: var(--panel-bg);
   padding: 1rem;
 }
 
+/* Right Pane */
 .right-pane {
   width: 60%;
-  overflow: auto; /* Enables both X & Y scrolling */
-  background-color: #f3f4f6; /* Tailwind gray-100 */
+  overflow: auto;
+  background-color: var(--panel-bg-alt);
   padding: 1rem;
 }
 
+/* Scrollable Content */
 .scrollable-content {
-  width: 150%; /* Forces horizontal scroll */
-  height: 200vh; /* Forces vertical scroll */
+  width: 150%;
+  height: 200vh;
 }

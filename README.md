@@ -14,6 +14,12 @@ SQL Query Runner is a **React-based** application that allows users to run **pre
 
 ---
 
+## **Architecture Diagram**  
+
+![image](https://github.com/user-attachments/assets/b94c4afe-7d65-476a-9814-30c99fcda9c4)
+
+---
+
 ## **⚡ Page Load Time & Performance**  
 
 ### **⏳ Page Load Time:**  

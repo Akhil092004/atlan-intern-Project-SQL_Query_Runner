@@ -9,12 +9,8 @@ SQL Query Runner is a **React-based** application that allows users to run **pre
 ## **🛠 Tech Stack & Dependencies**  
 
 - **Framework:** React (with TypeScript)  
-- **Styling:** Tailwind CSS  
-- **State Management:** React Hooks (`useState`, `useEffect`)  
-- **Libraries Used:**  
-  - **Appwrite (Optional):** Backend services (if integrated)  
-  - **React Router (if applicable):** Navigation  
-  - **Lodash (if applicable):** Utility functions  
+- **Styling:** Inline 
+- **State Management:** React Hooks (`useState`, `useEffect`)    
 
 ---
 
@@ -23,13 +19,7 @@ SQL Query Runner is a **React-based** application that allows users to run **pre
 ### **⏳ Page Load Time:**  
 - **Measured using Chrome DevTools → Performance Tab.**  
 - **Initial Load Time:** **~1.2 seconds** (without API calls).  
-
-### **🚀 Optimizations Done:**  
-✅ **Code Splitting & Lazy Loading** - Used **React.lazy()** to load components dynamically.  
-✅ **Reduced Unused CSS & JS** - Used **PurgeCSS** to remove unused Tailwind styles.  
-✅ **Optimized Images & Assets** - Minimized images using **TinyPNG**.  
-✅ **State Optimization** - Avoided unnecessary re-renders using `useMemo` & `useCallback`.  
-✅ **Debouncing User Inputs** - Prevented excessive re-renders in search/query inputs.  
+ 
 
 ---
 

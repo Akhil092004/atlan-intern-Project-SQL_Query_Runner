@@ -27,8 +27,8 @@ SQL Query Runner is a **React-based** application that allows users to run **pre
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/sql-query-runner.git
-cd sql-query-runner
+git clone https://github.com/Akhil092004/atlan-intern-Project-SQL_Query_Runner
+cd atlan-intern-Project-SQL_Query_Runner
 
 # 2️⃣ Install dependencies
 npm install
